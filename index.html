@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Select cart items and add them to your wishlist">
+    <title>Your cart | Northstar Supply</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Northstar Supply home">NORTHSTAR</a>
+      <div class="wishlist-summary" aria-label="Wishlist item count">
+        <span aria-hidden="true">♡</span>
+        Wishlist <span id="wishlist-count" class="count">0</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">Your collection</p>
+          <h1>Shopping cart</h1>
+          <p class="subtitle">Select the pieces you want to save for later.</p>
+        </div>
+        <p class="cart-count">4 items</p>
+      </div>
+
+      <section id="bulk-action" class="bulk-action" aria-label="Bulk wishlist actions" hidden>
+        <span id="selection-count">0 items selected</span>
+        <button id="add-selected" type="button">
+          <span aria-hidden="true">♡</span>
+          Add selected to wishlist
+        </button>
+      </section>
+
+      <section class="product-grid" aria-label="Products in your cart">
+        <article class="product-card">
+          <label class="select-product">
+            <input type="checkbox" value="weekender" data-product-checkbox>
+            <span>Select Canvas Weekender</span>
+          </label>
+          <div class="product-image image-sand" aria-hidden="true">WEEKENDER</div>
+          <div class="product-details">
+            <p class="category">Travel</p>
+            <h2>Canvas Weekender</h2>
+            <p class="variant">Sand · One size</p>
+            <p class="price">$148</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <label class="select-product">
+            <input type="checkbox" value="overshirt" data-product-checkbox>
+            <span>Select Utility Overshirt</span>
+          </label>
+          <div class="product-image image-olive" aria-hidden="true">OVERSHIRT</div>
+          <div class="product-details">
+            <p class="category">Outerwear</p>
+            <h2>Utility Overshirt</h2>
+            <p class="variant">Olive · Medium</p>
+            <p class="price">$116</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <label class="select-product">
+            <input type="checkbox" value="sneakers" data-product-checkbox>
+            <span>Select Court Sneakers</span>
+          </label>
+          <div class="product-image image-clay" aria-hidden="true">COURT 01</div>
+          <div class="product-details">
+            <p class="category">Footwear</p>
+            <h2>Court Sneakers</h2>
+            <p class="variant">Chalk · US 9</p>
+            <p class="price">$132</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <label class="select-product">
+            <input type="checkbox" value="cap" data-product-checkbox>
+            <span>Select Field Cap</span>
+          </label>
+          <div class="product-image image-blue" aria-hidden="true">FIELD CAP</div>
+          <div class="product-details">
+            <p class="category">Accessories</p>
+            <h2>Field Cap</h2>
+            <p class="variant">Navy · Adjustable</p>
+            <p class="price">$42</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
